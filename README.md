@@ -9,17 +9,11 @@ The dates are in different formats and shapes. Some of these formats are as belo
 
 
 04/10/2001; 04/10/19; 4/10/08; 4/30/10; 04-10-2001;
-
 Mar-10-2019; Mar 22, 2019; May 22, 2002; Mar. 29, 2004; Jun 23 2018;
-
 20 Jun 2011; 20 Jun 2011; 20 Jun. 2011; 20 Mar, 2011
-
 Jun 17th, 2009; Jun 11st, 2009; Jun 12nd, 2009
-
 Jun 2019; Sep 2009; Dec 2015
-
-6/2017; 11/2018
-
+6/2017; 11/2018; 10-1967
 2018; 1910
 
 
