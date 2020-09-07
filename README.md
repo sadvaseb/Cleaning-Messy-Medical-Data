@@ -1,6 +1,6 @@
 # Cleaning-Messy-Medical-Data
  
-This is a mini data cleaning project which is posted at Applied Data Science with Python Specialization program at the University of Michigan. The program available from [here] (https://www.coursera.org/learn/python-text-mining).
+This is a mini data cleaning project which is posted at Applied Data Science with Python Specialization program at the University of Michigan. The program available from [here](https://www.coursera.org/learn/python-text-mining) .
 
 
 The dataset is a messy medical data with all types of dates and time formats. The goal is to find dates in each row of data and sort them ascendingly. There are multiple numbers and date-like elements in each row, but there is only one date in each row (i.e., avoid extracting all numbers or date-like elements). 
