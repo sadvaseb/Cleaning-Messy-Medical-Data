@@ -19,15 +19,15 @@ Jun 2019; Sep 2009; Dec 2015
 
 This project is only for education purpose and it should not be used for submitting for the course. 
 
-```
+```python
 def date_sorter():
 
-	t2 = df.str.extract(r'(\\d{1,2} ?(?:Jan|Feb|Mar|Apr|May|Jun|Jul|Aug|Sep|Oct|Nov|Dec)[a-z,.]* \\d{2,4})')   # handels 20 Mar 2009; 20 March 2009; 20 Mar. 2009; 20 March, 2009
-	t3 = df.str.extract(r'((?:Jan|Feb|Mar|Apr|May|Jun|Jul|Aug|Sep|Oct|Nov|Dec)[a-z.,]* \\d{2,4})')   # handels  Feb 2009; Sep 2009; Oct 2010
-	t4 = df.str.extract(r'((?:Jan|Feb|Mar|Apr|May|Jun|Jul|Aug|Sep|Oct|Nov|Dec)[a-z\\.,-]*(?:\\s|-|\\.|,)\\d{1,2}[a-z,-.]*(?:\\s|-|\\.|,)\\d{2,4})')   # handels Mar 20th, 2009; Mar 21st, 2009; Mar 22nd, 2009; Mar-20-2009
-	t1 = df.str.extract(r'((?:\\d{1,2}[/-])(?:\\d{1,2}[/-])\\d{2,4})') # handels  04/20/2009; 04-20-2009
-	t5 = df.str.extract(r'((?:\\d{1,2}[/-]*)\\d{4})') # handels  12/2009; 12-2009
-	t6 = df.str.extract(r'(\\d{4})') # handels  2008
+	t2 = df.str.extract(r'(\\d{1,2} ?(?:Jan|Feb|Mar|Apr|May|Jun|Jul|Aug|Sep|Oct|Nov|Dec)[a-z,.]* \\d{2,4})')   # handles 20 Mar 2009; 20 March 2009; 20 Mar. 2009; 20 March, 2009
+	t3 = df.str.extract(r'((?:Jan|Feb|Mar|Apr|May|Jun|Jul|Aug|Sep|Oct|Nov|Dec)[a-z.,]* \\d{2,4})')   # handles Feb 2009; Sep 2009; Oct 2010
+	t4 = df.str.extract(r'((?:Jan|Feb|Mar|Apr|May|Jun|Jul|Aug|Sep|Oct|Nov|Dec)[a-z\\.,-]*(?:\\s|-|\\.|,)\\d{1,2}[a-z,-.]*(?:\\s|-|\\.|,)\\d{2,4})')   # handles Mar 20th, 2009; Mar 21st, 2009; Mar 22nd, 2009; Mar-20-2009
+	t1 = df.str.extract(r'((?:\\d{1,2}[/-])(?:\\d{1,2}[/-])\\d{2,4})') # handles 04/20/2009; 04-20-2009
+	t5 = df.str.extract(r'((?:\\d{1,2}[/-]*)\\d{4})') # handles 12/2009; 12-2009
+	t6 = df.str.extract(r'(\\d{4})') # handles 2008
 	output = t4.fillna(t2).fillna(t3).fillna(t1).fillna(t5).fillna(t6)
 	dates = pd.to_datetime(output.replace('Decemeber','December',regex=True).replace('Janaury','January',regex=True).replace('2June','June',regex=True))
 	return pd.Series(data =(dates.sort_values()).index)
