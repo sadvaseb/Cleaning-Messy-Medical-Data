@@ -14,7 +14,6 @@ Jun 2019; Sep 2009; Dec 2015
 2018; 1910
 
 
-This project is only for education purpose and it should not be used for submitting for the course. 
 
 ```python
 def date_sorter():
@@ -36,3 +35,5 @@ date_sorter()
  
 This is a mini data cleaning project which is posted at Applied Data Science with Python Specialization program at the University of Michigan. The program available from [here](https://www.coursera.org/learn/python-text-mining) .
 
+
+This project is only for education purpose and it should not be used for submitting for the course. 
